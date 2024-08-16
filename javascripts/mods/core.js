@@ -287,11 +287,17 @@ function modAbbs(mods = mod, short) {
 
 var ngm4retire = false
 function ngm4retiremsg() {
-	ngm4retire = true
 	// Do not show in respecced version
 	if (aarMod.newGame4MinusRespeccedVersion) return 
 	el("welcome").style.display = "flex"
 	el("welcomeMessage").innerHTML = `New Game Minus 4 is now retiring. Due to inactivity present on the original mod, we are now porting NG-4R into Aarex's Modifications. Don't worry, New Game Minus 4 will be moved into loader's NG-4R server. Thanks for playing!
 	<br><br>
-	Play <a href="https://raw.githack.com/loader3229/IvarK.github.io/Respecced/">New Game Minus 4: Respecced</a>`
+	Play <a href="https://raw.githack.com/loader3229/IvarK.github.io/Respecced/">New Game Minus 4: Respecced</a>
+	<br><br>
+	<a href="https://raw.githack.com/loader3229/NG-plus-3/NG-4R-porting/">Check out the current progress of this port here.</a>`
+}
+
+function clickInfo() {
+	if (mod.ngp3) el("ngp3_info").style.display = "block"
+	if (inOnlyNGM(4)) ngm4retiremsg()
 }

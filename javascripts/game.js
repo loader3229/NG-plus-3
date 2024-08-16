@@ -313,7 +313,7 @@ function updateTabAmount(update) {
 	if (update) player.options.tabAmount = (player.options.tabAmount + 1) % 3
 	else if (typeof player.options.tabAmount == "boolean") player.options.tabAmount = player.options.tabAmount ? 1 : 0
 
-	el("tabAmount").textContent = "Tab title: " + ["None", "Antimatter", "Highest reset resource"][player.options.tabAmount]
+	el("tabAmount").textContent = "Tab title: " + ["None", "Antimatter", "Highest major resource"][player.options.tabAmount]
 }
 
 el("news").onclick = function () {

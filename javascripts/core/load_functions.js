@@ -1240,8 +1240,13 @@ function dov12tov122(){
 }
 
 function updateVersionsONLOAD(){
+	ngm4retire = inOnlyNGM(4)
 	el('versionMod').textContent = modAbbs()
-	el('info').style.display = mod.ngp3 ? "" : "none"
+
+	el('info').style.display = mod.ngp3 || ngm4retire ? "" : "none"
+	el('info').textContent = ngm4retire ? "!" : "i"
+	el('ngp3_footer').style.display = !ngm4retire ? "" : "none"
+	el('ngm4_footer').style.display = ngm4retire ? "" : "none"
 
 	dov7tov10()
 	if (aarMod.newGamePlusVersion === undefined) if (player.eternities < 20 && ECComps("eterc1") > 0) aarMod.newGamePlusVersion = 1
@@ -1266,7 +1271,6 @@ function updateVersionsONLOAD(){
 	if (aarMod.ngudpV < 1.12) aarMod.ngudpV = 1.12
 	if (aarMod.nguepV < 1.03) aarMod.nguepV = 1.03
 	doNGM4v0tov2111()
-	ngm4retire = inOnlyNGM(4)
 	doNGSPUpdatingVersion()
 	doInitInfMultStuff()
 	dov12tov122()

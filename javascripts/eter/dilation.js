@@ -76,7 +76,7 @@ function getEternityBoostToDT(){
 	if (player.dilation.upgrades.includes('ngpp2') && mod.p3ep) {
 		let e = E(getEternitied())
 		gain = gain.mul(e.max(10).log10()).mul(Math.pow(e.max(1e7).log10()-6,3))
-		if (e.gt(5e14)) gain = gain.mul(Math.sqrt(e.log10())) // this comes into play at the grind right before quantum
+		//if (e.gt(5e14)) gain = gain.mul(Math.sqrt(e.log10())) // this comes into play at the grind right before quantum
 	}
 	return gain
 }

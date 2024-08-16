@@ -206,7 +206,7 @@ const NEUTRINO = NT = {
 				desc: `Eggons hatch instantly.`
 			}, {
 				cost: E(1e8),
-				desc: `Blue power boosts nanocharge and preonic spin.`,
+				desc: `Blue power boosts Nanocharge and preonic spin.`,
 
 				eff() {
 					let bLog = quSave.colorPowers.b.max(1).log10()
@@ -231,18 +231,18 @@ const NEUTRINO = NT = {
 			}, {
 				unl: _ => ghSave.times >= 5,
 				cost: E(5e9),
-				desc: `Green power boosts odd Emperor Dimensions and nanocharge.`,
+				desc: `Green power boosts odd-tiered Emperor Dimensions and Nanocharge.`,
 
 				eff: _ => quSave.colorPowers.g.add(1).root(300),
 				effDesc: e => `${shorten(e)}x`
 			}, {
 				unl: _ => ghSave.times >= 6,
 				cost: E(7.5e9),
-				desc: `Disable the meta-antimatter boost nerf to quark gain.`
+				desc: `Unsoftcap the Anti-Quark gain.`
 			}, {
 				unl: _ => ghSave.times >= 7,
 				cost: E(1e10),
-				desc: `Eternities and Space Shards synergy each other.`
+				desc: `Eternities and Space Shards boost each other.`
 			}, {
 				unl: _ => ghSave.times >= 8,
 				cost: E(1e12),
@@ -333,7 +333,7 @@ const NEUTRINO = NT = {
 			if (upg.unl) el("nt_upg_"+i).style.display = upg.unl() ? "" : "none"
 		}
 		el("nt_upg_12").setAttribute('ach-tooltip',
-			`Normal galaxy effect: ${shorten(NT.eff('upg', 12).normal)}x to preonic spin production,
+			`Antimatter Galaxy effect: ${shorten(NT.eff('upg', 12).normal)}x to preonic spin production,
 			Replicated Galaxy effect: ${shorten(NT.eff('upg', 12).replicated)}x to EC14 reward,
 			Tachyonic galaxy effect: ${shorten(NT.eff('upg', 12).free)}x to IC3 base`
 		)

@@ -405,7 +405,7 @@ function updatePCCompletions() {
 
 	if (r) el("stats_pc").style.display = "inline-block"
 
-	el("bpc68").textContent = "You've made " + shortenMoney(quSave.pairedChallenges.pc68best) + " in Paired Challenge combinations 6 and 8."
+	el("bpc68").textContent = "You've made " + shortenMoney(quSave.pairedChallenges.pc68best) + " antimatter in Paired Challenge combinations 6 and 8."
 	el("upcc").textContent = "You've completed " + (tmp.qu.chal.pc_comp) + " / 28 unique Paired Challenges."
 	el("pccranking").textContent = r.toFixed(1)
 }

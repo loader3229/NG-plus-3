@@ -19,7 +19,7 @@
 		<button class="storebtn" style="font-size: 15px" onclick="import_save()">Import</button><br>
 		<button class="storebtn" style="font-size: 15px" onclick="load_saves()">Load</button>
 		<button class="storebtn" style="font-size: 15px" onclick="reset_game()">Reset</button><br>
-		An error may have been outputted in the console (press F12 to view them). If there are any errors, the game won't load. Please hard reload (Ctrl+F5) if a new patch appears.
+		An error may have been outputted in the console (press F12 to view them). If there are any errors, the game won't load. Please hard reload (Ctrl+F5) if a new patch releases.
 	</div>
 	<script type="text/javascript" src="javascripts/stuck.js"></script>
 
@@ -1891,7 +1891,7 @@
 						</td>
 						<td>
 							<div class="eterchallengediv" id="eterc14div" style="height: 140px; display: none">
-								<span>You are stuck in IC3, and all replicanti boosts except to ID are nullified. Free tickspeed upgrades count five times as much towards the IC3 boost, and meta-antimatter is disabled.</span>
+								<span>You are stuck in IC3, and all extra effects to Replicantis are nullified. Free tickspeed upgrades count five times as much towards the IC3 boost, and meta-antimatter is disabled.</span>
 								<br>
 								<br>
 								<div class="outer">
@@ -2727,8 +2727,8 @@
 				<table class="table" id="studytable">
 					<tr>
 						<td><button id="121" onclick="buyTimeStudy(121)">The worse your average EP/min is, the more EP you get<span id="121desc">Currently: 1x</span>Cost: 9 Time Theorems</button></td>
-						<td><button id="122" onclick="buyTimeStudy(122)">You gain 35x more EP<span>Cost: 9 Time Theorems</button></td>
-						<td><button id="123" onclick="buyTimeStudy(123)">You gain more EP based on time spent in this Eternity<span id="123desc">Currently: 1x</span>Cost: 9 Time Theorems</button></td>
+						<td><button id="122" onclick="buyTimeStudy(122)">Gain 35x more EP<span>Cost: 9 Time Theorems</button></td>
+						<td><button id="123" onclick="buyTimeStudy(123)">Gain more EP based on time spent in this Eternity<span id="123desc">Currently: 1x</span>Cost: 9 Time Theorems</button></td>
 					</tr>
 				</table>
 				<table class="table" id="studytable">
@@ -2742,9 +2742,9 @@
 				</table>
 				<table class="table" id="studytable">
 					<tr>
-						<td><button id="141" onclick="buyTimeStudy(141)">Multiplier to IP, decaying over this Infinity<span id="141desc">Currently 1x</span>Cost: 4 Time Theorems</button></td>
+						<td><button id="141" onclick="buyTimeStudy(141)">Gain more IP, decaying over this Infinity<span id="141desc">Currently 1x</span>Cost: 4 Time Theorems</button></td>
 						<td><button id="142" onclick="buyTimeStudy(142)"><span id="142desc">You gain 1e25x more IP</span>Cost: 4 Time Theorems</button></td>
-						<td><button id="143" onclick="buyTimeStudy(143)">Multiplier to IP, increasing over this Infinity<span id="143desc">Currently 1x</span>Cost: 4 Time Theorems</button></td>
+						<td><button id="143" onclick="buyTimeStudy(143)">Gain more IP, increasing over this Infinity<span id="143desc">Currently 1x</span>Cost: 4 Time Theorems</button></td>
 					</tr>
 				</table>
 				<br>
@@ -3149,7 +3149,7 @@
 						</td>
 					</tr><tr id="beShortcut">
 						<td>
-							<button class="eternityupbtn" onclick="eternity()">Eternal Matter: <span id="eterShortcutEM"></span><br>Start a normal Eternity run.</button>
+							<button class="eternityupbtn" onclick="eternity()">Eternal Matter: <span id="eterShortcutEM"></span><br>Start a normal Eternity.</button>
 						</td>
 						<td>
 							<button class="eternitychallengestudy" onclick="startEC10()" style="width: 190px; height: 90px; margin: 0">Eternity Points: <span id="eterShortcutEP"></span><br>Start Eternity Challenge 10.</button>
@@ -3499,7 +3499,7 @@
 					</tr>
 					<tr id="speedrunRow4">
 						<td colspan=2></td>
-						<td><div id="speedrunMilestone25" style="background-image: url(images/quantum_speedruns/25.png)" ach-tooltip="Reward: Unlock the manual mode for the Eternity autobuyer, and Quantum doesn't disable auto-Discharge."></div></td>
+						<td><div id="speedrunMilestone25" style="background-image: url(images/quantum_speedruns/25.png)" ach-tooltip="Reward: Unlock the manual option for the Eternity autobuyer, and Quantum doesn't disable auto-Discharge."></div></td>
 						<td><div id="speedrunMilestone26" style="background-image: url(images/quantum_speedruns/26.png)" ach-tooltip="Reward: The rebuyable Dilation upgrade autobuyer can buy the maximum upgrades possible."></div></td>
 						<td><div id="speedrunMilestone27" style="background-image: url(images/quantum_speedruns/27.png)" ach-tooltip="Reward: You can buy max Meta-Dimension Boosts, and start with 4 Meta-Dimension Boosts."></div></td>
 						<td><div id="speedrunMilestone28" style="background-image: url(images/quantum_speedruns/28.png)" ach-tooltip="Reward: You can gain banked infinities without Big Crunching, and Replicated Galaxies don't reset on Big Crunch."></div></td>
@@ -3689,10 +3689,10 @@
 					<b id='ph_amt' style='font-size: 25px'></b> Photons
 					<span ach-tooltip="Based on Tachyonic Galaxies" id='ph_prod' style='font-size: 15px'></span><br>
 
-					Select one feature:
+					Select a feature to timewarp:
 					<button class='photon' id="ph_fea_0" onclick="ghSave.photons.sel[0] = 0">Photons</button>
 					<button class='photon' id="ph_fea_1" onclick="ghSave.photons.sel[0] = 1">Replicantis</button>
-					<button class='photon' id="ph_fea_2" onclick="ghSave.photons.sel[0] = 2" ach-tooltip="You can't emit to this feature if you are in Big Rip!">Decay</button><br><br>
+					<button class='photon' id="ph_fea_2" onclick="ghSave.photons.sel[0] = 2" ach-tooltip="You can't emit to this feature if you're in Big Rip!">Decay</button><br><br>
 
 					<div class='table_flex'>
 						<button class='photon slot' id="ph_slot_0" onclick="PHOTON.sel(0)"></button>
@@ -3737,10 +3737,10 @@
 						<td><div id="braveMilestone7" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 workers and Break Eternity upgrades."></div></td>
 						<td><div id="braveMilestone8" class="achievement achievementlocked" ach-tooltip="Reward: Passively generate anti-Quarks (^0.5), Gluons, and Space Shards."></div></td>
 					</tr><tr id="braveRow2">
-						<td><div id="braveMilestone9" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each one of the first 2 Emperor Dimensions"></div></td>
-						<td><div id="braveMilestone10" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each one of the first 4 Emperor Dimensions."></div></td>
-						<td><div id="braveMilestone11" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each one of the first 6 Emperor Dimensions."></div></td>
-						<td><div id="braveMilestone12" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each Emperor Dimension, and keep best antimatter in dilation on Fundament."></div></td>
+						<td><div id="braveMilestone9" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each tier of the first 2 Emperor Dimensions"></div></td>
+						<td><div id="braveMilestone10" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each tier of the first 4 Emperor Dimensions."></div></td>
+						<td><div id="braveMilestone11" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of each tier of the first 6 Emperor Dimensions."></div></td>
+						<td><div id="braveMilestone12" class="achievement achievementlocked" ach-tooltip="Reward: Start with 10 of every Emperor Dimension, and keep best antimatter in dilation on Fundament."></div></td>
 						<td><div id="braveMilestone13" class="achievement achievementlocked" ach-tooltip="Reward: Start with 5 Nanorewards."></div></td>
 						<td><div id="braveMilestone14" class="achievement achievementlocked" ach-tooltip="Reward: Workers are freely promotable and produce Duplicants instead."></div></td>
 						<td><div id="braveMilestone15" class="achievement achievementlocked" ach-tooltip="Reward: Passively produce 1% of Quarks per second."></div></td>
@@ -3785,14 +3785,18 @@
 
 		<!-- FOOTER -->
 		<div id="footer">
-			<button class='storebtn' id='info' onclick='el("ngp3_info").style.display = "block"'>i</button>
+			<button class='storebtn' id='info' onclick='clickInfo()'>i</button>
 			<b class="red">⚠️ TEST SERVER | MAY BE UNSTABLE ⚠️</b><br>
 			<a href="howto.html" target="_newtab">Help</a> |
 			<a href="https://ng-plus-plus-plus.fandom.com/wiki/" target="_newtab">Wiki</a> |
 			<a href="about.html" onclick="giveAchievement('A sound financial decision')" target="_newtab">About</a> |-|
-			<a href="http://discord.gg/KsjcgskgTj" target="_newtab">Discord</a> (<a href="http://aarextiaokhiao.github.io/chat.html" target="_newtab">Aarex's</a>) |
-			<a href="http://aarextiaokhiao.github.io/NG-plus-3/">Stable NG+3</a>
-			<!-- <a href="http://aarextiaokhiao.github.io/" target="_newtab">Aarex's Hub</a> -->
+			<a href="http://discord.gg/KsjcgskgTj" target="_newtab">Discord</a> (<a href="http://aarextiaokhiao.github.io/chat.html" target="_newtab">Aarex's</a>)
+			<span id="ngp3_footer">| <a href="http://aarextiaokhiao.github.io/NG-plus-3/">Stable NG+3</a></span>
+			<span id="ngm4_footer">
+				| <a href="https://raw.githack.com/loader3229/IvarK.github.io/Respecced/">NG-4R</a>
+				| <a href="https://raw.githack.com/loader3229/NG-plus-3/NG-4R-porting/">NG-4R Port</a>
+			</span>
+			| <a href="http://aarextiaokhiao.github.io/" target="_newtab">Aarex's Hub</a>
 		</div>
 	</div>
 	<div id='rediscover_stats'></div>
@@ -3812,12 +3816,11 @@
 			<br>
 
 			<b>(NG+3 v2.31: Ghostify Respecced)</b><br>
-			<b class="red">(Beta: 7/2/24 Build)</b><br>
+			<b class="red">(Beta: 8/2/24 Build)</b><br>
 			By <a href="https://aarextiaokhiao.github.io/">Aarex</a>, pg132, and usavictor.
 			<br><br>
 
-			NG++ is by dan-simon.
-			Part of Quantum animation is contributed by MrRedShark77.<br>
+			NG++ is by dan-simon. Quantum animation is modified from NG+3 Classic Reloaded.<br>
 			<b style='font-size: 10px'>(Not built from <a href="https://IvarK.github.io/AntimatterDimensions/">Reality</a> and Vue)</b>
 		</p>
 		<button class="storebtn" style="font-size: 15px" onclick="closeToolTip()" style="display: inline">Close</button>
@@ -3833,10 +3836,10 @@
 	<div id="TTbuttons">
 		<div id="theorembuybackground"></div>
 
-		<button class="timetheorembtn" onclick="toggleAutoTT()" id="theoremmax" style="margin-left:-276px; width:130px; height: 30px; font-size: 0.75rem; bottom: 77px;">Buy max Theorems</button>
-		<button class="timetheorembtn" onclick="buyWithAntimatter()" id="theoremam" style="margin-left: -276px">Buy Time Theorems <br>Cost: 1e20000 antimatter</button>
-		<button class="timetheorembtn" onclick="buyWithIP()" id="theoremip" style="margin-left: -86px">Buy Time Theorems <br>Cost: 1 IP</button>
-		<button class="timetheorembtnlocked" onclick="buyWithEP()" id="theoremep" style="margin-left: 106px">Buy Time Theorems <br>Cost: 1 EP</button>
+		<button class="timetheorembtn" onclick="toggleAutoTT()" id="theoremmax" style="margin-left:-276px; width:130px; height: 30px; font-size: 0.75rem; bottom: 77px;">Buy Max Theorems</button>
+		<button class="timetheorembtn" onclick="buyWithAntimatter()" id="theoremam" style="margin-left: -276px"></button>
+		<button class="timetheorembtn" onclick="buyWithIP()" id="theoremip" style="margin-left: -86px"></button>
+		<button class="timetheorembtnlocked" onclick="buyWithEP()" id="theoremep" style="margin-left: 106px"></button>
 		<p id="timetheorems" style="position: fixed;">You have 0 Time Theorems.</p>
 	</div>
 	<div id="preset_buttons" style="display:none;">
@@ -3880,10 +3883,10 @@
 			<button class="storebtn longbtn" id='ngpBtn' onclick="toggle_mod('ngp')" ach-tooltip="Start with many boosts that last until you reach Time Dilation. Mods: NG+, NG+4">NG+: OFF</button>
 			<br><br>
 			<b>Hellish</b><br>
-			<button class="storebtn longbtn" id='ngmmBtn' onclick="toggle_mod('ngmm')" ach-tooltip="Makes the game harder, but adds some mechanics to compromise. Mods: NG--, NG-3, NG-4C [retired], NG-4R">NG--: OFF</button>
+			<button class="storebtn longbtn" id='ngmmBtn' onclick="toggle_mod('ngmm')" ach-tooltip="Greatly nerfs some production, but adds some features to compromise. Mods: NG--, NG-3, NG-4C [retired], NG-4R">NG--: OFF</button>
 			<br><br>
 			<b>Buff</b><br>
-			<button class="storebtn longbtn" id='ngmuBtn' onclick="toggle_mod('ngmu')" ach-tooltip="A spinoff to NG^, which is slower than NG^, but faster than NG=.">NG*: OFF</button>
+			<button class="storebtn longbtn" id='ngmuBtn' onclick="toggle_mod('ngmu')" ach-tooltip="A spinoff series to NG^, but quite slower than NG^.">NG*: OFF</button>
 			<button class="storebtn longbtn" id='ngepBtn' onclick="toggle_mod('ngep')" ach-tooltip="Series of mods that make the game faster with more buffs (some include additional content).">NG↑: OFF</button>
 			<button class="storebtn longbtn" id='ngumuBtn' onclick="toggle_mod('ngumu')" ach-tooltip="A mod which buffs some boosts to NG Update Prime.">NGUd*': OFF</button>
 			<button class="storebtn longbtn" id='nguepBtn' onclick="toggle_mod('nguep')" ach-tooltip="A mod which greatly buffs some boosts to NG Update Prime.">NGUd↑': OFF</button>
@@ -3910,15 +3913,15 @@
 	<div class="popup optionmenu" id="confirmationoptions">
 		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
 		<div class="scrollablemenu">
-			<button id="sacConfirmBtn" onclick='sacrificeConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="gSacConfirmBtn" onclick='gSacrificeConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="challengeconfirmation" class="storebtn" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="eternityconf" onclick='toggleEternityConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="dilationConfirmBtn" class="storebtn" onclick="toggleDilaConf()" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="exdilationConfirmBtn" class="storebtn" onclick="toggleExdilaConf()" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="quantumConfirmBtn" class="storebtn" onclick="toggleQuantumConf()" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="bigRipConfirmBtn" class="storebtn" onclick="toggleBigRipConf()" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
-			<button id="ghostifyConfirmBtn" class="storebtn" onclick="toggleGhostifyConf()" style="width: 200px; height: 55px; font-size: 15px" style="display: inline"></button>
+			<button id="sacConfirmBtn" onclick='sacrificeConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="gSacConfirmBtn" onclick='gSacrificeConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="challengeconfirmation" class="storebtn" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="eternityconf" onclick='toggleEternityConf()' class="storebtn" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="dilationConfirmBtn" class="storebtn" onclick="toggleDilaConf()" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="exdilationConfirmBtn" class="storebtn" onclick="toggleExdilaConf()" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="quantumConfirmBtn" class="storebtn" onclick="toggleQuantumConf()" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="bigRipConfirmBtn" class="storebtn" onclick="toggleBigRipConf()" style="width: 200px; height: 55px; font-size: 15px"></button>
+			<button id="ghostifyConfirmBtn" class="storebtn" onclick="toggleGhostifyConf()" style="width: 200px; height: 55px; font-size: 15px"></button>
 		</div>
 	</div>
 	<div class="popup optionmenu" id="notationmenu">
@@ -3932,7 +3935,7 @@
 		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
 		<p id='chosenNotation'></p>
 		<p id='chosenCommas'></p>
-		<button id='openpsioptions' class='storebtn' style='width:150px' onclick='openNotationOptions()'>Notation options</button>
+		<button id='openpsioptions' class='storebtn' style='width:150px' onclick='openNotationOptions()'>More options</button>
 		<div id='mainnotationoptions1' class='notationOptions' style="left: 0px">
 			<table id='notationOptions'></table>
 		</div>
@@ -3985,18 +3988,18 @@
 		<p style='display:inline'>
 			<p id='chosenTheme'></p>
 			<div class="scrollablemenu">
-				<button class='storebtn' onclick="setTheme()" style='width: 240px'>Select Normal</button>
-				<button class='storebtn' onclick="setTheme('Metro')" style='width: 240px'>Select Metro</button>
-				<button class='storebtn' onclick="setTheme('Dark')" style='width: 240px'>Select Dark</button>
-				<button class='storebtn' onclick="setTheme('Dark Metro')" style='width: 240px'>Select Dark Metro</button>
-				<button class='storebtn' onclick="setTheme('Inverted')" style='width: 240px'>Select Inverted</button>
-				<button class='storebtn' onclick="setTheme('Inverted Metro')" style='width: 240px'>Select Inverted Metro</button>
-				<button class='storebtn' onclick="setTheme('Aero')" style='width: 240px'>Select Aero (by ducdat0507)</button>
-				<button class='storebtn' onclick="setTheme('Star Stream')" style='width: 240px'>Select Star Stream (by YYK)</button>
-				<button class='storebtn' onclick="setTheme('Void')" style='width: 240px'>Select Void (by Soul147)</button>
-				<button class='storebtn' onclick="setTheme('Aarex\'s Modifications')" style='width: 240px'>Select Aarex's Modifications</button>
-				<button class='storebtn' onclick="setTheme('Aarex\'s Mods II')" style='width: 240px'>Select Aarex's Mods II</button>
-				<button class='storebtn' onclick="setTheme('Aarex\'s Mods Tribus')" style='width: 240px'>Select Aarex's Mods: Tribus</button>
+				<button class='storebtn' onclick="setTheme()" style='width: 240px'>Normal</button>
+				<button class='storebtn' onclick="setTheme('Metro')" style='width: 240px'>Metro</button>
+				<button class='storebtn' onclick="setTheme('Dark')" style='width: 240px'>Dark</button>
+				<button class='storebtn' onclick="setTheme('Dark Metro')" style='width: 240px'>Dark Metro</button>
+				<button class='storebtn' onclick="setTheme('Inverted')" style='width: 240px'>Inverted</button>
+				<button class='storebtn' onclick="setTheme('Inverted Metro')" style='width: 240px'>Inverted Metro</button>
+				<button class='storebtn' onclick="setTheme('Aero')" style='width: 240px'>Aero (ducdat0507)</button>
+				<button class='storebtn' onclick="setTheme('Star Stream')" style='width: 240px'>Star Stream (YYK)</button>
+				<button class='storebtn' onclick="setTheme('Void')" style='width: 240px'>Void (Soul147)</button>
+				<button class='storebtn' onclick="setTheme('Aarex\'s Modifications')" style='width: 240px'>Aarex's Modifications</button>
+				<button class='storebtn' onclick="setTheme('Aarex\'s Mods II')" style='width: 240px'>Aarex's Mods II</button>
+				<button class='storebtn' onclick="setTheme('Aarex\'s Mods Tribus')" style='width: 240px'>Aarex's Mods: Tribus</button>
 			</div>
 		</p>
 	</div>
@@ -4018,7 +4021,7 @@
 		<button class="closebtn storebtn" onclick="closeToolTip()">&times;</button>
 		<div>
 			<button class='storebtn' id="preset_global_btn" onclick="PRESET.open('global', true)">Global</button>
-			<button class='storebtn' id="preset_local_btn" onclick="PRESET.open('global', false)">Local</button>
+			<button class='storebtn' id="preset_local_btn" onclick="PRESET.open('global', false)">Save</button>
 			<span id='preset_options'>
 				|
 				<button class='storebtn' onclick="PRESET.new()">New</button>

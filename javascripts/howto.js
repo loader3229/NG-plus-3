@@ -196,7 +196,7 @@ let HOW_TO = [
 		layer: "infinity",
 		desc: `Each replicanti has an upgradable chance to update every replicanti tick. You will gain a bonus to infinity dimensions based on how much replicanti you have.
 		<br>
-		When replicanti reach infinity, you can buy a galaxy. This will not increase the cost of normal galaxies. The amount of Replicated Galaxies you can have is capped (upgradable). Once you reach infinity replicanti, they will not continue growing (unless you have the relevant time study).
+		When replicanti reach infinity, you can buy a galaxy. This will not increase the cost of Antimatter Galaxies. The amount of Replicated Galaxies you can have is capped (upgradable). Once you reach infinity replicanti, they will not continue growing (unless you have the relevant time study).
 		<br>
 		When offline, in an inactive tab, lagging, or a tickspeed under 50ms, replicanti get calculated with an approximation. This can cause wildly varying results, especially at extremely low numbers (1-5).
 		<br>
@@ -285,7 +285,7 @@ let HOW_TO = [
 
 		title: "Meta Dimensions",
 		layer: "eternity",
-		desc: `Meta Dimensions are a new type of dimensions that resemble Normal Dimensions, but no tickspeed and galaxies. They can be unlocked by buying 1e24 TT dilation study. Meta-dimension 1 produces meta-antimatter, which makes dimension boosts more powerful. A meta-dimension 2 produces meta-dimension 1 and so on until the 8th. Unlike Normal Dimensions, resetting meta-dimensions (with meta-dimension shifts/boosts) does not reset anything outside of it.`
+		desc: `Meta Dimensions are a new type of dimensions that resemble Antimatter Dimensions, but no tickspeed and galaxies. They can be unlocked by buying 1e24 TT dilation study. Meta-dimension 1 produces meta-antimatter, which makes dimension boosts more powerful. A meta-dimension 2 produces meta-dimension 1 and so on until the 8th. Unlike Antimatter Dimensions, resetting meta-dimensions (with meta-dimension shifts/boosts) does not reset anything outside of it.`
 	}, {
 		mod: _ => ngp3,
 		req: _ => player.dilation.upgrades.includes("ngpp6"),
@@ -382,7 +382,7 @@ let HOW_TO = [
 		layer: "fundament",
 		desc() {
 			let msg = `
-				This is a prestige layer beyond Quantum that unlocks on reaching the goal in Big Rip. This resets all previous progress, and gives you Spectral Particles based on your antimatter in Big Rips.
+				This is the 4th major layer of NG+3 that unlocks on reaching the goal in Big Rip. This resets all prior progress as well as all Quantum features, and gives you Spectral Particles based on your antimatter in Big Rips.
 				<br><br>
 				<b>Brave Milestones</b><br>
 				Brave Milestones can be achieved by Fundamenting while under a certain amount of Quantums. Likewise, each Brave Milestone provides you with a reward that greatly boosts progress and makes Fundaments much faster and more efficient.
@@ -418,7 +418,7 @@ let HOW_TO = [
 		desc: `Tachyonic Galaxies generate Photons, which strengthen Lights.<br>		
 		You can emit any Emissions to skip time on Photons, Replicantis, and Decay.<br><br>
 
-		However, before you could emit: You must slow down one of respective mechanics to generate time.<br>
+		However, before you could emit: You must choose a mechanic to slow down for generating time.<br>
 		On going Fundament, any emission with stored time will be ready to emit.`
 	}, {
 		mod: _ => ngp3,

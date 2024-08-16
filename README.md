@@ -4,12 +4,12 @@ This modification adds several mods, adds more options, and supports infinite sa
 This repository is for testing new versions of NG-4 Respecced v3
 
 Mods implemented:
-- dan-simon's NG++
-- dan-simon's NG Update
+- dan-simon's NG++ (archive)
+- dan-simon's NG Update (archive)
 - e666666's NG-- (continued)
 - Aarex's NG-3
 - Aarex's NG-4 (pre-Respec, original)
-- Aarex's NG+3 (pre-Respec)
+- Aarex's NG+3 (pre-Respec, retiring)
 - Soul147's NG+4 (but modified)
 
 Mods will be implemented:

@@ -26,9 +26,10 @@ function bankedInfinityDisplay(){
 
 function displayEternityStats() {
 	/* ETERNITY */
+	let eternitiedEnd = (quantumed ? " this Quantum." : ".")
 	el("thisEternity").textContent = "You have spent " + timeDisplay(player.thisEternity) + " in this Eternity."
 	el("bestEternity").textContent = player.bestEternityTime < 9999999999 ? "Your fastest Eternity is " + timeDisplay(player.bestEternityTime) + "." : ""
-	el("eternitied").textContent = "You have Eternitied " + getFullExpansion(player.eternities) + " time" + (player.eternities == 1 ? "" : "s") + (quantumed ? " this Quantum." : ".")
+	el("eternitied").textContent = "You have Eternitied " + getFullExpansion(player.eternities) + " time" + (player.eternities == 1 ? "" : "s") + eternitiedEnd
 
 	/* DILATION */
 	let dil = hasAch("r136")
